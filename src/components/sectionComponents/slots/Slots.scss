@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.slotsSevenDays{
+    margin-top: 80px;
+    width: 460px;
+    height: 250px;
+    padding: 10px;
+    border: $border;
+    padding-top: 20px;
+    h2{
+        color: $buttonColor;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.seven-day-slots {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5,95px);
+    grid-template-rows: repeat(2 ,90px); 
+    margin-left: 20px; 
+  }
+  .moved{
+    margin-left: 150px;
+  }
+  
+ .card{
+   width: 60px;
+   height: 60px;
+   border: $border;
+   border-radius: 8px;
+   padding: 10px 10px;
+   p{
+    text-align: center ;
+   }
+   .days{
+    color: $gray;
+    font-weight: 500;
+   }
+   .date{
+    color: $buttonColor;
+    font-size: 13px;
+   }
+   .nro{
+    color:$gray;
+    font-size: 13px;
+   }
+   
+ }

@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.mainsection{
+    width: 100%;
+    padding-top: 100px;
+}
+.section{
+    width: 33.333%;
+    padding: 5px;
+}
+.sectionMid{
+    width: 26.333%;
+    padding: 0px 30px 0px 30px;
+}
+.sectionlast{
+    width: 32%;
+}
+.patientDetails{
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
+}
+.patientDetails2{
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px 10px 0px 10px;
+}
+
+.doctorsName{
+    p{
+        color: $buttonColor;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+.headerDate{
+    width: 33%;
+    display: flex;
+    h2{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 15px;
+    }
+    gap: 10px;
+    margin: auto;
+}
+.next{
+    font-size: 35px;
+}

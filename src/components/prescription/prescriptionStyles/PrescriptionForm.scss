@@ -1,0 +1,36 @@
+.frommainsection{
+    border: 1px solid #DEE2E6;
+    width: 93%;
+    background-color: #F5F5DC;
+    padding: 30px 20px 30px 20px;
+    margin-left: 20px;
+    form{
+        width: 100%;
+        .fomrlines{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            input{
+                width: 300px;
+                height: 32px;
+                
+            }
+            .date{
+                width: 200px;
+                height: 32px;
+            }
+            .ant-picker-input{
+                margin-bottom: 10px;
+                background-color: FFFFFF;
+            }
+        }
+        .visitInfo{
+            margin-top: 20px;
+        }
+        .anticon-mail{
+            width: 28px;
+            background-color: #B7CE63;
+            padding-left: 13px;
+        }
+    }
+}

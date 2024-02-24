@@ -1,0 +1,53 @@
+@import '../../../styles/variables.scss';
+.scrollable-div {
+    margin-top: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 300px; // Adjust height as needed
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #888; // Change the color of the scrollbar thumb
+        border-radius: 5px; // Add rounded corners to the scrollbar thumb
+    }
+
+  }
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    thead{
+        height: 60px;
+        background-color: #E8E8E8;
+        tr{
+            th{
+                text-align: center;
+                border:none;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    tbody{
+        tr{
+            border: 1px solid white;        
+            td{
+                height: 50px;
+                text-align: center;
+                background-color:rgb(249,249,249);
+                .name{
+                    font-weight: 500;
+                }
+            } 
+        }
+    }
+  }
+  .small{
+    font-size: 12px;
+    color: rgb(80, 79, 79);
+    font-weight: 500;
+  }
+  .call{
+    color: blue;
+    font-size: 13px;
+  }

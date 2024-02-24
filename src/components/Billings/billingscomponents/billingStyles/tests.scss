@@ -1,0 +1,26 @@
+@import '../../../../styles/variables.scss';
+.mainCollaps{
+    .collaps{
+        background-color:$buttonColor;
+        .ant-collapse-arrow{
+            svg{
+                display:none;
+            }
+        }
+        border-radius: 8px;
+        margin-top: 7px;
+    }
+    .ant-collapse-header{
+        margin-left: -20px;
+        .ant-collapse-header-text{
+            color: white;
+            font-size: medium;
+        }
+    }
+    .ant-select-selection-placeholder{
+        color: black;
+    }
+    .ant-select-suffix{
+        color: black;
+    }
+}

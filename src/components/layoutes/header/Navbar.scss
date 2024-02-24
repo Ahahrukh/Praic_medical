@@ -1,0 +1,161 @@
+@import '../../../styles/variables.scss' ;
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    background: $navbar;
+    position: fixed;
+    width: 100vw;
+    color: rgb(108, 117, 125);
+    z-index: 100;
+    height: 90px; 
+    .elementdata{
+      display: flex;
+      gap: 15px;
+    }
+    .detail{
+      margin-left: 30px;
+       height: 70px;
+       width: 800px;
+       display: flex;
+       padding-top: 10px;
+       justify-content: space-around;
+       .appointment2{
+        width: 150px;
+       }
+       .appointment{
+        border: $border;
+        text-align: center;
+        padding: 8px;
+        height: 50px;
+       
+        p{
+          font-size: 14px;
+        }
+        h2{
+          font-weight: 500;
+          font-size: 20px;
+        }
+       }
+    }
+   .otherDetails{
+    display: flex;
+    width: 46%;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 20px;
+   
+    .date{
+      width: 150px;
+      height: 40px;
+      background-color: white;
+      color: black;
+      font-size: small;
+      text-align: center;
+      border-radius: 9px;
+      padding: 10px 0px 0px 0px;
+      p:last-child{
+        color: $buttonColor;
+        font-weight: 500;
+      }
+    }
+    .btn{
+      background-color:$primary;
+      height: 35px;
+      padding-bottom: 5px;
+    }
+   }
+
+    .navbar-container {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 90px;
+      background-color: transparent;
+      z-index: 101; // Ensure it overlays navbar
+      margin: 0;
+    }
+  
+    @media (max-width: 992px) {
+      backdrop-filter: blur(20px);
+      background: $navbar;
+  
+      .navbar-container {
+        display: block;
+        position: absolute;
+        height: 60px;
+        background-color: transparent;
+        align-items: center;
+        .hamburger-lines {
+          display: block;
+          height: 28px;
+          width: 35px;
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          z-index: 200;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 0;
+  
+          .line {
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: white;
+          }
+  
+          .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.3s ease-in-out;
+          }
+  
+          .line2 {
+            transition: transform 0.2s ease-in-out;
+          }
+  
+          .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+  
+        .menu-items {
+          padding-block: 70px;
+          background: rgba(26, 25, 25, 0.9);
+          height: 100vh;
+          width: 100vw !important;
+          transform: translate(150%);
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.5s ease-in-out;
+          overflow-y: scroll;
+          padding-left: 100px;
+  
+          .nav-link {
+            display: block;
+            padding-inline: 20px;
+            padding-bottom: 0;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s ease color;
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+  
+    &.open {
+      .menu-items {
+        transform: translate(20%);
+      }
+    }
+  }

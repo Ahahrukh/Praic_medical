@@ -1,0 +1,22 @@
+.scrollable-div2 {
+    margin-top: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 220px;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #888; // Change the color of the scrollbar thumb
+        border-radius: 5px; // Add rounded corners to the scrollbar thumb
+    }
+   
+
+}
+.invoice{
+    text-align: center;
+    font-weight: 500;
+    padding-top: -10px;
+    margin-bottom: 20px;
+    margin-bottom: -10px;
+}

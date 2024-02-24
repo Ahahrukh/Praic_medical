@@ -1,0 +1,18 @@
+.mainprescription{
+    
+    display: flex;
+}
+.prescription1{
+    padding-top: 100px;
+    width: 75%;
+    
+}
+.prescription2{
+    
+    padding-top: 100px;
+    width: 25%;
+    .doctorName{
+        color: #F58633;
+        margin-top: 40px;
+    }
+}

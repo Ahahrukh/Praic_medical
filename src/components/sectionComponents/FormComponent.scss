@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.maindiv{
+    margin-top: 5px;
+}
+
+.formline{
+    display: flex;
+    width: 450px;
+    gap: 15px;
+    Input{
+        height: 35px;
+    }
+    font-size: 15px;
+    font-weight: 500;
+}
+.mainForm{
+    border: 1px solid rgb(193, 192, 192);
+    width: 480px;
+    padding: 10px 10px 25px 13.5px;
+}
+.btnForm{
+    display: flex;
+    width: 450px;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+    Button{
+        background-color:$buttonColor;
+        font-size: 12px;
+    }
+}
